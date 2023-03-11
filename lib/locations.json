@@ -1,0 +1,916 @@
+{
+  "locations": [
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Grand Rapids",
+        "regionCode": "US",
+        "administrativeArea": "MI",
+        "addressLines": ["625 Kenmoor Ave SE", "Suite 100"],
+        "postalCode": "49546"
+      },
+      "name": "locations/2433084720086621784",
+      "title": "Agile Virtual PT"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["2280 Trawood Dr."],
+        "postalCode": "79935"
+      },
+      "name": "locations/3384576823042074814",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Newport",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["4 Main Street", "Unit T2"],
+        "postalCode": "04953"
+      },
+      "name": "locations/4549692805720341789",
+      "title": "Back In Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Franklin",
+        "regionCode": "US",
+        "administrativeArea": "WI",
+        "addressLines": ["7253 S 76th St"],
+        "postalCode": "53132"
+      },
+      "name": "locations/4742268483783067375",
+      "title": "Franklin Rehabilitation"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Garner",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["901 US-70", "Suite 120"],
+        "postalCode": "27529"
+      },
+      "name": "locations/5414567298971514272",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["4242 Hondo Pass Dr.", "Ste. 110"],
+        "postalCode": "79904"
+      },
+      "name": "locations/5819145883152888092",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "O'Fallon",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["9331 Phoenix Village Pkwy."],
+        "postalCode": "63368"
+      },
+      "name": "locations/6770221272885481599",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["7411 Remcon Cir", "# A"],
+        "postalCode": "79912"
+      },
+      "name": "locations/7550310614370715856",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Jacksonville",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["2457 Gum Branch Road, Ste 600"],
+        "postalCode": "28540"
+      },
+      "name": "locations/8888941408303816794",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["7825 North Mesa Street", "Suite B"],
+        "postalCode": "79932-1623"
+      },
+      "name": "locations/9606845184304503565",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Warrenton",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["605 E. Booneslick Rd.", "Ste. 3"],
+        "postalCode": "63383"
+      },
+      "name": "locations/11233261817291913641",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Belle Chasse",
+        "regionCode": "US",
+        "administrativeArea": "LA",
+        "addressLines": ["8397 Highway 23", "Ste 101"],
+        "postalCode": "70037"
+      },
+      "name": "locations/11321241675205036870",
+      "title": "Rehab Access Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Las Cruces",
+        "regionCode": "US",
+        "administrativeArea": "NM",
+        "addressLines": ["880 S Telshor Blvd.", "Ste. 202"],
+        "postalCode": "88011"
+      },
+      "name": "locations/11365527156229567313",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Auburn",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["600 Turner St.", "Ste. 2"],
+        "postalCode": "04210"
+      },
+      "name": "locations/12461319995505763779",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Washington",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["1989 W 15th St", "Suite 103"],
+        "postalCode": "27889-3364"
+      },
+      "name": "locations/12534095938290305649",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "St. Peters",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["4800 Mexico Rd", "# 104"],
+        "postalCode": "63376"
+      },
+      "name": "locations/12953954322418033906",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["1300 Murchison Dr. Ste. 314"],
+        "postalCode": "79902"
+      },
+      "name": "locations/13309785425570294291",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Edison",
+        "regionCode": "US",
+        "administrativeArea": "NJ",
+        "addressLines": ["3830 Park Ave.", "Ste. 202"],
+        "postalCode": "08820"
+      },
+      "name": "locations/14914512338508112429",
+      "title": "Arrow Physical Therapy & Rehabilitation"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Ellsworth",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["248 State Street", "Ste. 3A"],
+        "postalCode": "04605"
+      },
+      "name": "locations/15321530414339597255",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Old Town",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["482 Stillwater Avenue"],
+        "postalCode": "04468"
+      },
+      "name": "locations/17024675468981216222",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Plainwell",
+        "regionCode": "US",
+        "administrativeArea": "MI",
+        "addressLines": ["390 Oaks Crossing"],
+        "postalCode": "49080"
+      },
+      "name": "locations/13793002686008378",
+      "title": "Armor Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Horizon City",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["13650 Eastlake Blvd Suite 505"],
+        "postalCode": "79928"
+      },
+      "name": "locations/1280994231617701822",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Ellisville",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["1346 Clarkson Clayton Center"],
+        "postalCode": "63011"
+      },
+      "name": "locations/1944088885940233331",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Havelock",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["1202 E Main St."],
+        "postalCode": "28532"
+      },
+      "name": "locations/2711769914542647847",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Belfast",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["256 Main Street", "Suite B"],
+        "postalCode": "04915"
+      },
+      "name": "locations/2850804553440824150",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Wentzville",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["1428 West Meyer Rd"],
+        "postalCode": "63385"
+      },
+      "name": "locations/3206847629315637376",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["1387 George Dieter Dr, Bldg A, Ste 107"],
+        "postalCode": "79936-7410"
+      },
+      "name": "locations/4437976895942175231",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Gorham",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["94 Main St 2"],
+        "postalCode": "04038"
+      },
+      "name": "locations/4834422312056796231",
+      "title": "Back In Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "O'Fallon",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["2982 State Hwy K"],
+        "postalCode": "63368"
+      },
+      "name": "locations/6187903339487558924",
+      "title": "Excel Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Oakland",
+        "regionCode": "US",
+        "administrativeArea": "CA",
+        "addressLines": ["4341 Piedmont Ave #201"],
+        "postalCode": "94611"
+      },
+      "name": "locations/6335824647559936762",
+      "title": "SOL Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Creve Coeur",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["713 N New Ballas Rd"],
+        "postalCode": "63141"
+      },
+      "name": "locations/6513225905650111283",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "South Portland",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["185 Ocean St"],
+        "postalCode": "04106"
+      },
+      "name": "locations/6841154226545467389",
+      "title": "Back In Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Swansboro",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["656 W Corbett Ave"],
+        "postalCode": "28584"
+      },
+      "name": "locations/6854898611280036886",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["12801 Edgemere Blvd", "# 102"],
+        "postalCode": "79938"
+      },
+      "name": "locations/7071051382741959948",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Apache Junction",
+        "regionCode": "US",
+        "administrativeArea": "AZ",
+        "addressLines": ["1075 S. Idaho Rd. Ste. 210"],
+        "postalCode": "85119"
+      },
+      "name": "locations/7638364272159970804",
+      "title": "Continuum Wellness Clinic"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Dover-Foxcroft",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["1008 W Main Street,"],
+        "postalCode": "04426"
+      },
+      "name": "locations/7810945499202150038",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["2720 John Hayes Street", "Building C, Suite 301"],
+        "postalCode": "79938"
+      },
+      "name": "locations/7975748870667514915",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Wexford",
+        "regionCode": "US",
+        "administrativeArea": "PA",
+        "addressLines": ["10441 Perry Hwy"],
+        "postalCode": "15090"
+      },
+      "name": "locations/9365615080166540262",
+      "title": "Panther Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Gretna",
+        "regionCode": "US",
+        "administrativeArea": "LA",
+        "addressLines": ["1712 Stumpf Blvd"],
+        "postalCode": "70056"
+      },
+      "name": "locations/9966586101652586471",
+      "title": "Rehab Access Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Hermon",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["2402 U.S. Rte 2", "Suite P"],
+        "postalCode": "04401"
+      },
+      "name": "locations/10507981088875080022",
+      "title": "Back In Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Jacksonville",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["2756 Richlands Hwy."],
+        "postalCode": "28540"
+      },
+      "name": "locations/10889769656609661820",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["836 Redd Rd", "# B"],
+        "postalCode": "79912"
+      },
+      "name": "locations/10894688809263813548",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Saco",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["532 Main St"],
+        "postalCode": "04072"
+      },
+      "name": "locations/11668195132666899983",
+      "title": "Back In Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Pleasanton",
+        "regionCode": "US",
+        "administrativeArea": "California",
+        "addressLines": ["6668 Owens Drive"],
+        "postalCode": "94588-3334"
+      },
+      "name": "locations/11858169242489091175",
+      "title": "Bodymax Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Grand Rapids",
+        "regionCode": "US",
+        "administrativeArea": "MI",
+        "addressLines": ["625 Kenmoor Ave SE, Ste 100"],
+        "postalCode": "49546"
+      },
+      "name": "locations/12391072483045163125",
+      "title": "Alliance Physical Therapy Partners"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "St. Louis",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["9523 Gravois Road"],
+        "postalCode": "63123"
+      },
+      "name": "locations/13605589918150743010",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Saint Charles",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["1982 First Capitol Dr."],
+        "postalCode": "63301"
+      },
+      "name": "locations/14191247858727804512",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "St. Peters",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["112 Piper Hill Dr. Ste. 2"],
+        "postalCode": "63376"
+      },
+      "name": "locations/14257195834117956064",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Kentwood",
+        "regionCode": "US",
+        "administrativeArea": "MI",
+        "addressLines": ["5147 East Paris Avenue South East Ste. 21"],
+        "postalCode": "49512"
+      },
+      "name": "locations/15027794534054029695",
+      "title": "Biocorrect Orthotics Lab"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Danville",
+        "regionCode": "US",
+        "administrativeArea": "California",
+        "addressLines": ["4165 Blackhawk Plaza Circle #275"],
+        "postalCode": "94506-4653"
+      },
+      "name": "locations/15465530164923836040",
+      "title": "SOL Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Wake Forest",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["900 South Franklin Street Suite 201"],
+        "postalCode": "27587"
+      },
+      "name": "locations/16921150155961104887",
+      "title": "Allied Rehab (Physical, Occupational, and Speech therapy)"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["13371 Eastlake Boulevard", "Building 40 Suite 503"],
+        "postalCode": "79928"
+      },
+      "name": "locations/17110687540368416703",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Winterville",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["740 West Fire Tower Road #113"],
+        "postalCode": "28590-8411"
+      },
+      "name": "locations/962344673318014537",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Brewer",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["797 Wilson St."],
+        "postalCode": "04412"
+      },
+      "name": "locations/1365878164572209115",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "New Bern",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["2009 Neuse Blvd"],
+        "postalCode": "28560"
+      },
+      "name": "locations/2395386729273836320",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Berkeley",
+        "regionCode": "US",
+        "administrativeArea": "CA",
+        "addressLines": ["2001 Fourth St."],
+        "postalCode": "94710"
+      },
+      "name": "locations/2844565498975949265",
+      "title": "SOL Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Union",
+        "regionCode": "US",
+        "administrativeArea": "NJ",
+        "addressLines": ["1000 Galloping Hill Rd 102"],
+        "postalCode": "07083"
+      },
+      "name": "locations/2846047060136179628",
+      "title": "Arrow Physical Therapy & Rehabilitation - Union"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["820 E Redd Road Ste. A"],
+        "postalCode": "79912"
+      },
+      "name": "locations/5309977949089838518",
+      "title": "Performance Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Las Cruces",
+        "regionCode": "US",
+        "administrativeArea": "NM",
+        "addressLines": ["3330 Rinconada Blvd. Ste. 5"],
+        "postalCode": "88011"
+      },
+      "name": "locations/5913988106854944761",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Springfield Township",
+        "regionCode": "US",
+        "administrativeArea": "New Jersey",
+        "addressLines": ["219 Morris Avenue"],
+        "postalCode": "07081"
+      },
+      "name": "locations/5921984373554958720",
+      "title": "Arrow Physical Therapy & Rehabilitation"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Oakland",
+        "regionCode": "US",
+        "administrativeArea": "CA",
+        "addressLines": ["2220 Mountain Boulevard", "Suite 120"],
+        "postalCode": "94611-2958"
+      },
+      "name": "locations/6220118041758454984",
+      "title": "SOL Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Portland",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["1041 Brighton Ave"],
+        "postalCode": "04102"
+      },
+      "name": "locations/8051036445521071170",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["3215 Gateway Blvd West", "# 201"],
+        "postalCode": "79903"
+      },
+      "name": "locations/8896619241228755792",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Waterville",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["120 Elm Plaza"],
+        "postalCode": "04901"
+      },
+      "name": "locations/9287605376007641259",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Woodbridge Township",
+        "regionCode": "US",
+        "administrativeArea": "NJ",
+        "addressLines": ["453 Amboy Ave"],
+        "postalCode": "07095"
+      },
+      "name": "locations/10047846301789360420",
+      "title": "Arrow Physical Therapy & Rehabilitation - Woodbridge"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Hampton Township",
+        "regionCode": "US",
+        "administrativeArea": "PA",
+        "addressLines": ["4960 PA-8"],
+        "postalCode": "15101"
+      },
+      "name": "locations/10526836259276021612",
+      "title": "Panther Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Ferndale",
+        "regionCode": "US",
+        "administrativeArea": "WA",
+        "addressLines": ["5709 Hamlin Ave."],
+        "postalCode": "98248"
+      },
+      "name": "locations/10961444772013473052",
+      "title": "Whatcom Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Blaine",
+        "regionCode": "US",
+        "administrativeArea": "WA",
+        "addressLines": ["250 G St."],
+        "postalCode": "98230"
+      },
+      "name": "locations/11092033243928919948",
+      "title": "Whatcom Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Sneads Ferry",
+        "regionCode": "US",
+        "administrativeArea": "NC",
+        "addressLines": ["1961 NC-172 #106"],
+        "postalCode": "28460"
+      },
+      "name": "locations/11897855218023720241",
+      "title": "Peak Performance Sports and Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Harmony",
+        "regionCode": "US",
+        "administrativeArea": "PA",
+        "addressLines": ["115 Perry Hwy, STE 136"],
+        "postalCode": "16037"
+      },
+      "name": "locations/11993386064963655708",
+      "title": "Panther Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "North O'Fallon",
+        "regionCode": "US",
+        "administrativeArea": "MO",
+        "addressLines": ["1096 Tom Ginnever Ave"],
+        "postalCode": "63366"
+      },
+      "name": "locations/12862505498880287296",
+      "title": "Excel Sports & Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["11380 McCombs #505"],
+        "postalCode": "79934"
+      },
+      "name": "locations/13495351405140833419",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "El Paso",
+        "regionCode": "US",
+        "administrativeArea": "TX",
+        "addressLines": ["12311 Montana Ave", "Building A, Suite 101"],
+        "postalCode": "79938"
+      },
+      "name": "locations/14729572522049457540",
+      "title": "Border Therapy Services"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Walnut Creek",
+        "regionCode": "US",
+        "administrativeArea": "CA",
+        "addressLines": ["1651 Botelho Dr Ste. 150"],
+        "postalCode": "94596"
+      },
+      "name": "locations/15160858959702109123",
+      "title": "SOL Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Sanford",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["1364 Main St"],
+        "postalCode": "04073-3660"
+      },
+      "name": "locations/16154476689382942822",
+      "title": "Back in Motion Physical Therapy"
+    },
+    {
+      "storefrontAddress": {
+        "languageCode": "en",
+        "locality": "Bangor",
+        "regionCode": "US",
+        "administrativeArea": "ME",
+        "addressLines": ["117 Broadway, Suite 1"],
+        "postalCode": "04401"
+      },
+      "name": "locations/18248846081402253160",
+      "title": "Back in Motion Physical Therapy"
+    }
+  ]
+}
