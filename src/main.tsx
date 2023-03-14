@@ -4,7 +4,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google'
 import './index.css'
 import App from './App'
 
-const googleClientId = process.env.GOOGLE_OAUTH_CLIENT_ID
+const googleClientId: string = String(import.meta.env.GOOGLE_OAUTH_CLIENT_ID)
 
 ReactDOM.render(
   <GoogleOAuthProvider clientId={googleClientId}>

@@ -3,10 +3,10 @@ import Widget from './components/Widget'
 import { GoogleLogin } from '@react-oauth/google'
 
 function App() {
-  const responseMessage = (response) => {
+  const responseMessage = (response: any) => {
     console.log(response)
   }
-  const errorMessage = (error) => {
+  const errorMessage = (error: void) => {
     console.log(error)
   }
 
