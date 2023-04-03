@@ -1,6 +1,4 @@
-import React from 'react'
-
-const Review = () => {
+const Review = (comment: any, name: string) => {
   return (
     <figure className='max-w-screen-md'>
       <div className='flex items-center mb-4 text-yellow-300'>
@@ -52,21 +50,16 @@ const Review = () => {
       </div>
       <blockquote>
         <p className='text-2xl font-semibold text-gray-900 dark:text-white'>
-          "Fantastic and easy PT experience. Recommend"
+          "{comment.comment}"
         </p>
       </blockquote>
       <figcaption className='flex items-center mt-6 space-x-3'>
-        <img
-          className='w-6 h-6 rounded-full'
-          src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png'
-          alt='profile picture'
-        />
         <div className='flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700'>
           <cite className='pr-3 font-medium text-gray-900 dark:text-white'>
-            Nate
+            {comment.name.replace(/ .*/, '')}
           </cite>
           <cite className='pl-3 text-sm font-light text-gray-500 dark:text-gray-400'>
-            Agile Virtual Physical Therapy
+            Alliance Physical Therapy Partners
           </cite>
         </div>
       </figcaption>
