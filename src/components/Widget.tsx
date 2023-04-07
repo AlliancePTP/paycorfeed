@@ -14,7 +14,7 @@ const Widget = () => {
   return (
     <div className='container mx-auto'>
       <div className='h-56 sm:h-64 xl:h-80 2xl:h-96'>
-        <Carousel>
+        <Carousel slideInterval={5000}>
           {reviews.map((review) => (
             <div className='flex items-center justify-center h-full bg-gray-400 dark:bg-gray-700 dark:text-white'>
               {/* <div key={review.reviewId}>{review.comment}</div> */}
