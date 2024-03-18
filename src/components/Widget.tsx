@@ -1,16 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Review from './Review'
 import { Carousel } from 'flowbite-react'
-import data from '../../lib/reviews.json'
+
 
 const Widget = () => {
-  const reviews = data.reviews.filter(
-    (review) =>
-      review.comment &&
-      review.starRating === 'FIVE' &&
-      review.comment.length <= 300
-  )
-  console.log(reviews)
+  const [jobs, setJobs] = useState([])
+  fetch('https://recruitingbypaycor.com/career/CareerAtomFeed.action?clientId=8a7883d0879c591b0187e3570b4e28cc').then((response) => response.text().then((xml) => setJobs(xml)))
+  // const jobs = data.reviews.filter(
+  //   (review) =>
+  //     review.comment &&
+  //     review.starRating === 'FIVE' &&
+  //     review.comment.length <= 300
+  // )
   return (
     <div className='container mx-auto'>
       <div className='h-56 sm:h-64 xl:h-80 2xl:h-96'>
