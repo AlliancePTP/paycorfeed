@@ -1,6 +1,4 @@
-import logo from './logo.svg'
 import Widget from './components/Widget'
-import { GoogleLogin } from '@react-oauth/google'
 
 function App() {
   const responseMessage = (response: any) => {
@@ -11,7 +9,7 @@ function App() {
   }
 
   return (
-    <div className='text-center selection:bg-green-900'>
+    <div className='text-center bg-blue-600 selection:bg-green-900'>
       <header className=''>
         {/* <img
           src={logo}
