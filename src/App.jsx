@@ -1,16 +1,28 @@
 import Widget from './components/Widget'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import JobPage from './components/JobPage'
+import { useState } from 'react'
+import { getJobs } from './lib/jobs'
+import { useEffect } from 'react'
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Widget />} />
-        <Route path='job/:id' element={<JobPage />} />
-      </Routes>
-    </Router>
-  )
+  const [jobs, setJobs] = useState([])
+  useEffect(async () => {
+    const jobs = await getJobs()
+    setJobs(jobs)
+  }, [])
+  if (jobs.length === 0) {
+    return <div>Loading...</div>
+  } else {
+    return (
+      <Router>
+        <Routes>
+          <Route path='/' element={<Widget jobs={jobs} />} />
+          <Route path='job/:id' element={<JobPage jobs={jobs} />} />
+        </Routes>
+      </Router>
+    )
+  }
 }
 
 export default App
