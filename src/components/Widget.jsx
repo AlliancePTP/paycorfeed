@@ -1,15 +1,18 @@
 import Job from './Jobs'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { departments } from '../lib/departments.js'
 
 const Widget = ({ jobs }) => {
-  // console.log(localStorage.getItem('selectedType'))
   const [selectedType, setSelectedType] = useState()
   const [search, setSearch] = useState('')
 
-  localStorage.getItem('selectedType')
-    ? setSelectedType(localStorage.getItem('selectedType'))
-    : localStorage.setItem('selectedType', null)
+  useEffect(() => {
+      if (localStorage.getItem('selectedType') != 'null') {
+    setSelectedType(localStorage.getItem('selectedType'))
+  } else {
+    setSelectedType(null)
+  }
+  }, [])
 
   return (
     <div className='container w-screen mx-auto md:w-full'>
