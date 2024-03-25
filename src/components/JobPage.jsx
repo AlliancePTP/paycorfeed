@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom'
 const Job = ({ jobs }) => {
   const { id } = useParams()
   const match = jobs.find((job) => job.id.content === id)
-  console.log(match)
   const description = DOMPurify.sanitize(decode(match.summary.content))
   const navigate = useNavigate()
 

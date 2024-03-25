@@ -1,16 +1,15 @@
-import { render } from 'react-dom'
 import Job from './Jobs'
 import { useState } from 'react'
 import { departments } from '../lib/departments.js'
-console.log(departments)
+
 const Widget = ({ jobs }) => {
   // console.log(localStorage.getItem('selectedType'))
   const [selectedType, setSelectedType] = useState()
   const [search, setSearch] = useState('')
 
-  // localStorage.getItem('selectedType')
-  //   ? localStorage.getItem('selectedType')
-  //   : null
+  localStorage.getItem('selectedType')
+    ? setSelectedType(localStorage.getItem('selectedType'))
+    : localStorage.setItem('selectedType', null)
 
   return (
     <div className='container w-screen mx-auto md:w-full'>
@@ -91,7 +90,6 @@ const Widget = ({ jobs }) => {
       </div>
 
       {jobs.map((job, index) => {
-        console.log(job['newton:budget_title']?.content)
         if (
           (!selectedType ||
             job['newton:budget_title']?.content === selectedType) &&
