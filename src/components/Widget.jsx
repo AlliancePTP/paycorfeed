@@ -102,6 +102,13 @@ const Widget = ({ jobs }) => {
           return <Job key={index} job={job} />
         }
       })}
+      <a href='/paycor'>Paycor iframe</a>
+      <form
+        method='post'
+        action='https://recruitingbypaycor.com/career/SubmitResume.action?parentUrl=&clientId=8a7883d0879c591b0187e3570b4e28cc&id=8a7885a88df21562018e3d3982252bd8'
+      >
+        <button type='submit'>Test Apply Link</button>
+      </form>
     </div>
   )
 }
