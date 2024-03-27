@@ -15,20 +15,20 @@ const Widget = ({ jobs }) => {
   }, [])
 
   return (
-    <div className='container mx-auto w-screen md:w-full'>
+    <div className='container w-screen mx-auto md:w-full'>
       {/* Search */}
       <div className='mx-auto mb-8 w-full p-6 md:w-[46rem]'>
         <form onSubmit={(e) => e.preventDefault()}>
           <label
             htmlFor='default-search'
-            className='sr-only mb-2 text-sm font-medium text-gray-900 dark:text-white'
+            className='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'
           >
             Search
           </label>
           <div className='relative'>
-            <div className='start-0 ps-3 pointer-events-none absolute inset-y-0 flex items-center'>
+            <div className='absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3'>
               <svg
-                className='ml-4 h-4 w-4 text-gray-500 '
+                className='w-4 h-4 ml-4 text-gray-500 '
                 aria-hidden='true'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -46,7 +46,7 @@ const Widget = ({ jobs }) => {
             <input
               type='search'
               id='default-search'
-              className='ps-10 block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 pl-12 text-xl font-semibold text-gray-900 placeholder:text-xl placeholder:font-semibold focus:border-blue-500 focus:ring-blue-500'
+              className='block w-full p-4 pl-12 text-xl font-semibold text-gray-900 border border-gray-300 rounded-lg ps-10 bg-gray-50 placeholder:text-xl placeholder:font-semibold focus:border-blue-500 focus:ring-blue-500'
               placeholder='Search for jobs'
               required=''
               onChange={(e) => {
