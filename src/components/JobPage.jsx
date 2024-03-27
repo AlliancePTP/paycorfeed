@@ -2,11 +2,14 @@ import { useParams } from 'react-router-dom'
 import DOMPurify from 'dompurify'
 import { decode } from 'html-entities'
 import { useNavigate } from 'react-router-dom'
+import he from 'he'
 
 const Job = ({ jobs }) => {
   const { id } = useParams()
   const match = jobs.find((job) => job.id.content === id)
-  const description = DOMPurify.sanitize(decode(match.summary.content))
+  const description = he.decode(
+    DOMPurify.sanitize(decode(match.summary.content))
+  )
   const navigate = useNavigate()
 
   return (
@@ -17,7 +20,9 @@ const Job = ({ jobs }) => {
       >
         Go back
       </button>
-      <h1 className='text-3xl font-bold center'>{match.title.content}</h1>
+      <h1 className='center text-3xl font-bold'>
+        {he.decode(match.title.content)}
+      </h1>
       <div className='mt-6' dangerouslySetInnerHTML={{ __html: description }} />
       <p>
         {match['newton:location'].content}, {match['newton:state'].content}
