@@ -5,5 +5,5 @@ export const departments = [
   'Clinical',
   'Corporate',
   'Leadership',
-  'Industrial Rehabilitation'
+  'Industrial Injury Prevention'
 ]
