@@ -10,9 +10,36 @@ const Widget = ({ jobs, states }) => {
   const [state, setState] = useState(null)
 
   const { department } = useParams()
+
   useEffect(() => {
     if (localStorage.getItem('selectedType') != 'null') {
       setSelectedType(localStorage.getItem('selectedType'))
+    } else if (department) {
+      switch (department) {
+        case 'clinic-support':
+          setSelectedType('Clinic Support')
+          break
+        case 'marketing-sales':
+          setSelectedType('Marketing/Sales')
+          break
+        case 'clinical-leadership':
+          setSelectedType('Clinical Leadership')
+          break
+        case 'clinical':
+          setSelectedType('Clinical')
+          break
+        case 'central-services':
+          setSelectedType('Central Services')
+          break
+        case 'leadership':
+          setSelectedType('Leadership')
+          break
+        case 'industrial-injury-prevention':
+          setSelectedType('Industrial Injury Prevention')
+          break
+        default:
+          setSelectedType(null)
+      }
     } else {
       setSelectedType(null)
     }
@@ -134,7 +161,7 @@ const Widget = ({ jobs, states }) => {
         ) {
           return <Job key={index} job={job} />
         }
-      })}
+      }) || <div className='text-center'>No jobs found</div>}
     </div>
   )
 }
