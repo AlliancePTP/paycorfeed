@@ -3,7 +3,7 @@ export const departments = [
   'Marketing/Sales',
   'Clinical Leadership',
   'Clinical',
-  'Corporate',
+  'Central Services',
   'Leadership',
   'Industrial Injury Prevention'
 ]

@@ -1,11 +1,15 @@
 import Job from './Jobs'
 import { useState, useEffect } from 'react'
 import { departments } from '../lib/departments.js'
+import { usStates } from '../lib/states.js'
+import { useParams } from 'react-router-dom'
 
-const Widget = ({ jobs }) => {
-  const [selectedType, setSelectedType] = useState()
+const Widget = ({ jobs, states }) => {
+  const [selectedType, setSelectedType] = useState(null)
   const [search, setSearch] = useState('')
+  const [state, setState] = useState(null)
 
+  const { department } = useParams()
   useEffect(() => {
     if (localStorage.getItem('selectedType') != 'null') {
       setSelectedType(localStorage.getItem('selectedType'))
@@ -17,11 +21,11 @@ const Widget = ({ jobs }) => {
   return (
     <div className='container w-screen mx-auto md:w-full'>
       {/* Search */}
-      <div className='mx-auto mb-8 w-full p-6 md:w-[46rem]'>
-        <form onSubmit={(e) => e.preventDefault()}>
+      <div className='mx-auto flex w-full flex-row p-6 md:w-[46rem]'>
+        <form className='w-full' onSubmit={(e) => e.preventDefault()}>
           <label
             htmlFor='default-search'
-            className='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'
+            className='mb-2 text-sm font-medium text-gray-900 sr-only'
           >
             Search
           </label>
@@ -46,7 +50,7 @@ const Widget = ({ jobs }) => {
             <input
               type='search'
               id='default-search'
-              className='block w-full p-4 pl-12 text-xl font-semibold text-gray-900 border border-gray-300 rounded-lg ps-10 bg-gray-50 placeholder:text-xl placeholder:font-semibold focus:border-blue-500 focus:ring-blue-500'
+              className='block w-full h-16 p-4 pl-12 text-xl font-semibold text-gray-900 border border-gray-300 rounded-l-lg ps-10 bg-gray-50 placeholder:text-xl placeholder:font-semibold focus:border-blue-500 focus:ring-blue-500'
               placeholder='Search for jobs'
               required=''
               onChange={(e) => {
@@ -56,6 +60,34 @@ const Widget = ({ jobs }) => {
             />
           </div>
         </form>
+        {/* State filter */}
+        <div className='mx-auto w-72'>
+          <select
+            id='states'
+            className='block w-full h-16 p-4 text-xl font-semibold text-gray-400 capitalize border border-l-0 border-gray-300 rounded-r-lg ps-10 bg-gray-50 focus:border-blue-500 focus:ring-blue-500'
+            onChange={(e) => {
+              e.preventDefault()
+              e.target.value === 'State'
+                ? setState(null)
+                : setState(e.target.value)
+            }}
+          >
+            <option defaultValue={null}>State</option>
+            {states.map((state, index) => {
+              return (
+                <option
+                  className='pr-8 text-gray-900 capitalize'
+                  key={index}
+                  value={state}
+                >
+                  {usStates
+                    .find((s) => s.abbreviation === state)
+                    ?.name.toLowerCase()}
+                </option>
+              )
+            })}
+          </select>
+        </div>
       </div>
       {/* Filter buttons */}
       <div className='mx-auto mb-8 flex w-full flex-wrap justify-center gap-4 md:w-[46rem] md:p-6'>
@@ -83,7 +115,7 @@ const Widget = ({ jobs }) => {
               }`}
               onClick={() => {
                 setSelectedType(department)
-                localStorage.setItem('selectedType', department)
+                // localStorage.setItem('selectedType', department)
               }}
             >
               {department}
@@ -97,6 +129,7 @@ const Widget = ({ jobs }) => {
         if (
           (!selectedType ||
             job['newton:budget_title']?.content === selectedType) &&
+          (!state || job['newton:state']?.content === state) &&
           JSON.stringify(job).toLowerCase().includes(search.toLowerCase())
         ) {
           return <Job key={index} job={job} />
