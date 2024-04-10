@@ -12,9 +12,10 @@ const Widget = ({ jobs, states }) => {
   const { department } = useParams()
 
   useEffect(() => {
-    if (localStorage.getItem('selectedType') != 'null') {
-      setSelectedType(localStorage.getItem('selectedType'))
-    } else if (department) {
+    // if (localStorage.getItem('selectedType') != 'null') {
+    //   setSelectedType(localStorage.getItem('selectedType'))
+    // } else 
+    if (department) {
       switch (department) {
         case 'clinic-support':
           setSelectedType('Clinic Support')
@@ -116,41 +117,44 @@ const Widget = ({ jobs, states }) => {
           </select>
         </div>
       </div>
-      {/* Filter buttons */}
-      <div className='mx-auto mb-8 flex w-full flex-wrap justify-center gap-4 md:w-[46rem] md:p-6'>
-        <button
-          className={`rounded-md px-4 py-2 ${
-            selectedType === null
-              ? 'bg-[#0A7CBA] text-white'
-              : 'bg-gray-200 text-gray-700'
-          }`}
-          onClick={() => {
-            setSelectedType(null)
-            localStorage.setItem('selectedType', null)
-          }}
-        >
-          All
-        </button>
-        {departments.map((department, index) => {
-          return (
-            <button
-              key={index}
-              className={`rounded-md px-4 py-2 ${
-                selectedType === department
-                  ? 'bg-[#0A7CBA] text-white'
-                  : 'bg-gray-200 text-gray-700'
-              }`}
-              onClick={() => {
-                setSelectedType(department)
-                // localStorage.setItem('selectedType', department)
-              }}
-            >
-              {department}
-            </button>
-          )
-        })}
-        {/* Add more buttons for other types if needed */}
-      </div>
+      {/* Filter buttons */}      
+      {!department ? (
+        <div className='mx-auto mb-8 flex w-full flex-wrap justify-center gap-4 md:w-[46rem] md:p-6'>
+          <button
+            className={`rounded-md px-4 py-2 ${
+              selectedType === null
+                ? 'bg-[#0A7CBA] text-white'
+                : 'bg-gray-200 text-gray-700'
+            }`}
+            onClick={() => {
+              setSelectedType(null)
+              localStorage.setItem('selectedType', null)
+            }}
+          >
+            All
+          </button>
+          {departments.map((department, index) => {
+            return (
+              <button
+                key={index}
+                className={`rounded-md px-4 py-2 ${
+                  selectedType === department
+                    ? 'bg-[#0A7CBA] text-white'
+                    : 'bg-gray-200 text-gray-700'
+                }`}
+                onClick={() => {
+                  setSelectedType(department)
+                  // localStorage.setItem('selectedType', department)
+                }}
+              >
+                {department}
+              </button>
+            )
+          })}
+          {/* Add more buttons for other types if needed */}
+        </div> 
+          ) : <h1 className='text-5xl font-bold text-center text-gray-900 my-8'>{selectedType} Jobs</h1> }
+      
 
       {jobs.map((job, index) => {
         if (
