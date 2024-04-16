@@ -15,7 +15,7 @@ const Job = ({ jobs }) => {
 
   console.log('parent', parent.location.origin);
 
-  if (parent.location.origin != 'https://lifeatalliance.com') {
+  if (parent?.location?.origin != 'https://lifeatalliance.com') {
     localStorage.setItem('jobID', id)
     window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
   }
