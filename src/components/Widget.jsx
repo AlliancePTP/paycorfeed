@@ -2,14 +2,22 @@ import Job from './Jobs'
 import { useState, useEffect } from 'react'
 import { departments } from '../lib/departments.js'
 import { usStates } from '../lib/states.js'
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Widget = ({ jobs, states }) => {
   const [selectedType, setSelectedType] = useState(null)
   const [search, setSearch] = useState('')
   const [state, setState] = useState(null)
 
+  const navigate = useNavigate()
+
   const { department } = useParams()
+
+  if (localStorage.getItem('JobID') != null ) {
+    navigate(`/job/${localStorage.getItem}`)
+    localStorage.clear
+  }
 
   useEffect(() => {
     // if (localStorage.getItem('selectedType') != 'null') {

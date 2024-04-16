@@ -7,10 +7,18 @@ import he from 'he'
 const Job = ({ jobs }) => {
   const { id } = useParams()
   const match = jobs.find((job) => job.id.content === id)
+  const navigate = useNavigate()
+
   const description = he.decode(
     DOMPurify.sanitize(decode(match.summary.content))
   )
-  const navigate = useNavigate()
+
+  console.log('parent', parent.location.origin);
+
+  if (parent.location.origin != 'https://lifeatalliance.com') {
+    localStorage.setItem('jobID', id)
+    window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
+  }
 
   return (
     <div className='container mx-auto mt-6 flex w-[46rem] flex-col'>
