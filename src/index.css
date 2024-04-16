@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#gnewtonBackToHome {
+  display: hidden !important;
+}
