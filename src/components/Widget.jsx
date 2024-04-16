@@ -19,7 +19,7 @@ const Widget = ({ jobs, states }) => {
   if (localStorage.getItem('jobID')) {
     console.log(localStorage.getItem('jobID'));
     navigate(`/job/${localStorage.getItem('jobID')}`)
-    localStorage.clear
+    localStorage.clear()
   }
 
   useEffect(() => {
