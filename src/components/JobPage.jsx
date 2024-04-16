@@ -9,11 +9,11 @@ const Job = ({ jobs }) => {
   const match = jobs.find((job) => job.id.content === id)
   const navigate = useNavigate()
 
+  localStorage.clear()
+
   const description = he.decode(
     DOMPurify.sanitize(decode(match.summary.content))
   )
-
-  console.log('parent', location.ancestorOrigins[0]);
 
   if (location.ancestorOrigins[0] === undefined) {
       localStorage.setItem('jobID', id)

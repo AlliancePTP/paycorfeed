@@ -9,6 +9,7 @@ const Widget = ({ jobs, states }) => {
   const [selectedType, setSelectedType] = useState(null)
   const [search, setSearch] = useState('')
   const [state, setState] = useState(null)
+  const [jobLink, setJobLink] = useState('')
 
   const navigate = useNavigate()
 
@@ -16,10 +17,11 @@ const Widget = ({ jobs, states }) => {
 
   console.log('job', localStorage.getItem('jobID'));
 
+
+
   if (localStorage.getItem('jobID')) {
-    console.log(localStorage.getItem('jobID'));
-    navigate(`/job/${localStorage.getItem('jobID')}`)
-    localStorage.clear()
+    setJobLink(localStorage.getItem('jobID'))
+    navigate(`/job/${jobLink}`)
   }
 
   useEffect(() => {
