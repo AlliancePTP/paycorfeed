@@ -13,7 +13,7 @@ const Job = ({ jobs }) => {
     DOMPurify.sanitize(decode(match.summary.content))
   )
 
-  console.log('parent', parent);
+  console.log('parent', window.location.href);
 
   if (!parent) {
     if (parent?.location?.origin != 'https://lifeatalliance.com') {
