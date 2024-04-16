@@ -3,22 +3,28 @@ import DOMPurify from 'dompurify'
 import { decode } from 'html-entities'
 import { useNavigate } from 'react-router-dom'
 import he from 'he'
+import { useEffect } from 'react';
 
 const Job = ({ jobs }) => {
   const { id } = useParams()
   const match = jobs.find((job) => job.id.content === id)
   const navigate = useNavigate()
 
-  localStorage.clear()
-
   const description = he.decode(
     DOMPurify.sanitize(decode(match.summary.content))
   )
+  
+  useEffect(() => {
+
+  localStorage.clear()
+
 
   if (location.ancestorOrigins[0] === undefined) {
       localStorage.setItem('jobID', id)
       window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
     }
+
+  }), []
 
   return (
     <div className='container mx-auto mt-6 flex w-[46rem] flex-col'>
