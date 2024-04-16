@@ -14,9 +14,11 @@ const Widget = ({ jobs, states }) => {
 
   const { department } = useParams()
 
-  if (localStorage.getItem('JobID') != null ) {
-    console.log(localStorage.getItem('JobID'));
-    navigate(`/job/${localStorage.getItem}`)
+  console.log('job', localStorage.getItem('jobID'));
+
+  if (localStorage.getItem('jobID')) {
+    console.log(localStorage.getItem('jobID'));
+    navigate(`/job/${localStorage.getItem('jobID')}`)
     localStorage.clear
   }
 
