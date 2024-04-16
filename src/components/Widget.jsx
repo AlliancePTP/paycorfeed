@@ -18,8 +18,8 @@ const Widget = ({ jobs, states }) => {
   
   useEffect(() => {
     if (localStorage.getItem('jobID')) {
-      setJobLink(localStorage.getItem('jobID'))
-      navigate(`/job/${jobLink}`)
+      // setJobLink(localStorage.getItem('jobID'))
+      navigate(`/job/${localStorage.getItem('jobID')}`)
     }
     // if (localStorage.getItem('selectedType') != 'null') {
     //   setSelectedType(localStorage.getItem('selectedType'))
