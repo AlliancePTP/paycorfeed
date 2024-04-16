@@ -13,10 +13,10 @@ const Job = ({ jobs }) => {
     DOMPurify.sanitize(decode(match.summary.content))
   )
 
-  console.log('parent', window.location.href);
+  console.log('parent', window.parent.location.href);
 
   if (!parent) {
-    if (parent?.location?.origin != 'https://lifeatalliance.com') {
+    if (window?.parent?.location?.origin != 'https://lifeatalliance.com') {
       localStorage.setItem('jobID', id)
       window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
     }
