@@ -15,12 +15,12 @@ const Job = ({ jobs }) => {
 
   console.log('parent', parent.location.href);
 
-  if (!parent) {
-    if (window?.parent?.location?.origin != 'https://lifeatalliance.com') {
-      localStorage.setItem('jobID', id)
-      window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
-    }
-  }
+  // if (!parent) {
+  //   if (window?.parent?.location?.origin != 'https://lifeatalliance.com') {
+  //     localStorage.setItem('jobID', id)
+  //     window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
+  //   }
+  // }
 
   return (
     <div className='container mx-auto mt-6 flex w-[46rem] flex-col'>
