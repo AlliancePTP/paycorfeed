@@ -18,11 +18,16 @@ const Job = ({ jobs }) => {
 
   localStorage.clear()
 
+  let userAgent = navigator.userAgent
 
-  if (location.ancestorOrigins[0] === undefined) {
-      localStorage.setItem('jobID', id)
-      window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
-    }
+  if (!userAgent.match(/firefox/fxios/i)) {
+    if (location.ancestorOrigins[0] === undefined) {
+        localStorage.setItem('jobID', id)
+        window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
+      }
+  }
+
+
 
   }), []
 
