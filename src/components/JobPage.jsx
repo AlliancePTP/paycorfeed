@@ -3,7 +3,7 @@ import DOMPurify from 'dompurify'
 import { decode } from 'html-entities'
 import { useNavigate } from 'react-router-dom'
 import he from 'he'
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 const Job = ({ jobs }) => {
   const { id } = useParams()
@@ -13,23 +13,21 @@ const Job = ({ jobs }) => {
   const description = he.decode(
     DOMPurify.sanitize(decode(match.summary.content))
   )
-  
+
   useEffect(() => {
+    localStorage.clear()
 
-  localStorage.clear()
+    let userAgent = navigator.userAgent
 
-  let userAgent = navigator.userAgent
-
-  if (!userAgent.match(/firefox/fxios/i)) {
-    if (location.ancestorOrigins[0] === undefined) {
+    if (!userAgent.match(/firefox|fxios/i)) {
+      if (location.ancestorOrigins[0] === undefined) {
         localStorage.setItem('jobID', id)
-        window.parent.location.href = 'https://lifeatalliance.com/career-opportunities'
+        window.parent.location.href =
+          'https://lifeatalliance.com/career-opportunities'
       }
-  }
-
-
-
-  }), []
+    }
+  }),
+    []
 
   return (
     <div className='container mx-auto mt-6 flex w-[46rem] flex-col'>
@@ -39,7 +37,7 @@ const Job = ({ jobs }) => {
       >
         Go back
       </button>
-      <h1 className='text-3xl font-bold center'>
+      <h1 className='center text-3xl font-bold'>
         {he.decode(match.title.content)}
       </h1>
       <p className='my-4 font-bold'>
@@ -47,7 +45,7 @@ const Job = ({ jobs }) => {
       </p>
       <div className='mt-6' dangerouslySetInnerHTML={{ __html: description }} />
       <form
-        className='flex justify-center mt-6'
+        className='mt-6 flex justify-center'
         method='post'
         action={`https://recruitingbypaycor.com/career/SubmitResume.action?parentUrl=&clientId=8a7883d0879c591b0187e3570b4e28cc&id=${id}`}
       >
