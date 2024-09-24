@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Widget = ({ jobs, states }) => {
   const [selectedType, setSelectedType] = useState(null)
+  const [selectedBrand, setBrand] = useState(null)
   const [search, setSearch] = useState('')
   const [state, setState] = useState(null)
   const [jobLink, setJobLink] = useState('')
@@ -15,7 +16,10 @@ const Widget = ({ jobs, states }) => {
 
   const { department } = useParams()
 
-  
+  const { brand } = useParams()
+
+  console.log(jobs)
+
   useEffect(() => {
     if (localStorage.getItem('jobID')) {
       // setJobLink(localStorage.getItem('jobID'))
@@ -23,7 +27,7 @@ const Widget = ({ jobs, states }) => {
     }
     // if (localStorage.getItem('selectedType') != 'null') {
     //   setSelectedType(localStorage.getItem('selectedType'))
-    // } else 
+    // } else
     if (department) {
       switch (department) {
         case 'clinic-support':
@@ -53,23 +57,27 @@ const Widget = ({ jobs, states }) => {
     } else {
       setSelectedType(null)
     }
+
+    brand ? setBrand(brand) : ''
   }, [])
 
+  console.log(brand)
+
   return (
-    <div className='container w-screen mx-auto md:w-full'>
+    <div className='container mx-auto w-screen md:w-full'>
       {/* Search */}
       <div className='mx-auto flex w-full flex-row p-6 md:w-[46rem]'>
         <form className='w-full' onSubmit={(e) => e.preventDefault()}>
           <label
             htmlFor='default-search'
-            className='mb-2 text-sm font-medium text-gray-900 sr-only'
+            className='sr-only mb-2 text-sm font-medium text-gray-900'
           >
             Search
           </label>
           <div className='relative'>
-            <div className='absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3'>
+            <div className='start-0 ps-3 pointer-events-none absolute inset-y-0 flex items-center'>
               <svg
-                className='w-4 h-4 ml-4 text-gray-500 '
+                className='ml-4 h-4 w-4 text-gray-500 '
                 aria-hidden='true'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -87,7 +95,7 @@ const Widget = ({ jobs, states }) => {
             <input
               type='search'
               id='default-search'
-              className='block w-full h-16 p-4 pl-12 text-xl font-semibold text-gray-900 border border-gray-300 rounded-l-lg ps-10 bg-gray-50 placeholder:text-xl placeholder:font-semibold focus:border-blue-500 focus:ring-blue-500'
+              className='ps-10 block h-16 w-full rounded-l-lg border border-gray-300 bg-gray-50 p-4 pl-12 text-xl font-semibold text-gray-900 placeholder:text-xl placeholder:font-semibold focus:border-blue-500 focus:ring-blue-500'
               placeholder='Search for jobs'
               required=''
               onChange={(e) => {
@@ -101,7 +109,7 @@ const Widget = ({ jobs, states }) => {
         <div className='mx-auto w-72'>
           <select
             id='states'
-            className='block w-full h-16 p-4 text-xl font-semibold text-gray-400 capitalize border border-l-0 border-gray-300 rounded-r-lg ps-10 bg-gray-50 focus:border-blue-500 focus:ring-blue-500'
+            className='ps-10 block h-16 w-full rounded-r-lg border border-l-0 border-gray-300 bg-gray-50 p-4 text-xl font-semibold capitalize text-gray-400 focus:border-blue-500 focus:ring-blue-500'
             onChange={(e) => {
               e.preventDefault()
               e.target.value === 'State'
@@ -113,7 +121,7 @@ const Widget = ({ jobs, states }) => {
             {states.map((state, index) => {
               return (
                 <option
-                  className='pr-8 text-gray-900 capitalize'
+                  className='pr-8 capitalize text-gray-900'
                   key={index}
                   value={state}
                 >
@@ -126,7 +134,7 @@ const Widget = ({ jobs, states }) => {
           </select>
         </div>
       </div>
-      {/* Filter buttons */}      
+      {/* Filter buttons */}
       {!department ? (
         <div className='mx-auto mb-8 flex w-full flex-wrap justify-center gap-4 md:w-[46rem] md:p-6'>
           <button
@@ -161,15 +169,21 @@ const Widget = ({ jobs, states }) => {
             )
           })}
           {/* Add more buttons for other types if needed */}
-        </div> 
-          ) : <h1 className='text-5xl font-bold text-center text-gray-900 my-8'>{selectedType} Jobs</h1> }
-      
+        </div>
+      ) : (
+        <h1 className='my-8 text-center text-5xl font-bold text-gray-900'>
+          {selectedType} Jobs
+        </h1>
+      )}
 
       {jobs.map((job, index) => {
         if (
           (!selectedType ||
             job['newton:budget_title']?.content === selectedType) &&
           (!state || job['newton:state']?.content === state) &&
+          (!selectedBrand ||
+            job['newton:budget_group']?.content.toLowerCase() ===
+              selectedBrand) &&
           JSON.stringify(job).toLowerCase().includes(search.toLowerCase())
         ) {
           return <Job key={index} job={job} />

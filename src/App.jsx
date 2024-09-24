@@ -16,7 +16,7 @@ function App() {
   }, [])
   if (jobs.length === 0) {
     return (
-      <div className='container mx-auto mt-12 text-3xl text-center'>
+      <div className='container mx-auto mt-12 text-center text-3xl'>
         Loading our jobs...
       </div>
     )
@@ -27,6 +27,10 @@ function App() {
           <Route path='/' element={<Widget jobs={jobs} states={states} />} />
           <Route
             path='department/:department'
+            element={<Widget jobs={jobs} states={states} />}
+          />
+          <Route
+            path='brand/:brand'
             element={<Widget jobs={jobs} states={states} />}
           />
           <Route path='job/:id' element={<JobPage jobs={jobs} />} />
