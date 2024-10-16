@@ -14,7 +14,7 @@ function App() {
     setJobs(jobs)
     setStates(states.sort())
 
-    if (window.location.href.indexOf('paycor/?gnk' > -1)) {
+    if (window.location.href.indexOf('gni' > -1)) {
       const queryString = window.location.search
       const urlParams = new URLSearchParams(queryString)
       const jobId = urlParams.get('gni')
