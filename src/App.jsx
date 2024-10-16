@@ -14,7 +14,7 @@ function App() {
     setJobs(jobs)
     setStates(states.sort())
 
-    if (document.referrer === 'https://www.thegravityapp.com/') {
+    if (!document.referrer != 'https://www.thegravityapp.com/') {
       console.log(window.location.href)
       console.log(document.referrer)
       const queryString = window.location.search
