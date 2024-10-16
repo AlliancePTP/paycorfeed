@@ -18,8 +18,6 @@ const Widget = ({ jobs, states }) => {
 
   const { brand } = useParams()
 
-  console.log(jobs)
-
   useEffect(() => {
     if (localStorage.getItem('jobID')) {
       // setJobLink(localStorage.getItem('jobID'))
@@ -60,8 +58,6 @@ const Widget = ({ jobs, states }) => {
 
     brand ? setBrand(brand) : ''
   }, [])
-
-  console.log(brand)
 
   return (
     <div className='container mx-auto w-screen md:w-full'>
