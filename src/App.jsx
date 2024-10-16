@@ -14,6 +14,13 @@ function App() {
     setJobs(jobs)
     setStates(states.sort())
     console.log(window.location.href)
+
+    if (window.location.href.indexOf('paycor/?gnk')) {
+      const queryString = window.location.search
+      const urlParams = new URLSearchParams(queryString)
+      const jobId = urlParams.get('gni')
+      console.log(jobId)
+    }
   }, [])
   if (jobs.length === 0) {
     return (
