@@ -13,6 +13,7 @@ function App() {
     const { jobs, states } = await getJobs()
     setJobs(jobs)
     setStates(states.sort())
+    console.log(window.location.href)
   }, [])
   if (jobs.length === 0) {
     return (
