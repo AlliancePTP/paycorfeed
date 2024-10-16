@@ -15,6 +15,8 @@ function App() {
     setStates(states.sort())
 
     if (window.location.href.indexOf('gni' > -1)) {
+      console.log(window.location.href)
+      console.log(document.referrer)
       const queryString = window.location.search
       const urlParams = new URLSearchParams(queryString)
       const jobId = urlParams.get('gni')
