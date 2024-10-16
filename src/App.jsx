@@ -15,14 +15,15 @@ function App() {
     setStates(states.sort())
 
     if (!document.referrer != 'https://www.thegravityapp.com/') {
+      console.log('true')
       console.log(window.location.href)
       console.log(document.referrer)
-      const queryString = window.location.search
-      const urlParams = new URLSearchParams(queryString)
-      const jobId = urlParams.get('gni')
-      localStorage.setItem('jobID', jobId)
-      window.parent.location.href =
-        'https://lifeatalliance.com/career-opportunities'
+      // const queryString = window.location.search
+      // const urlParams = new URLSearchParams(queryString)
+      // const jobId = urlParams.get('gni')
+      // localStorage.setItem('jobID', jobId)
+      // window.parent.location.href =
+      //   'https://lifeatalliance.com/career-opportunities'
     }
   }, [])
   if (jobs.length === 0) {
