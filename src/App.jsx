@@ -13,13 +13,14 @@ function App() {
     const { jobs, states } = await getJobs()
     setJobs(jobs)
     setStates(states.sort())
-    console.log(window.location.href)
 
     if (window.location.href.indexOf('paycor/?gnk')) {
       const queryString = window.location.search
       const urlParams = new URLSearchParams(queryString)
       const jobId = urlParams.get('gni')
-      console.log(jobId)
+      localStorage.setItem('jobID', jobId)
+      window.parent.location.href =
+        'https://lifeatalliance.com/career-opportunities'
     }
   }, [])
   if (jobs.length === 0) {
