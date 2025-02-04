@@ -14,7 +14,7 @@ function App() {
     setJobs(jobs)
     setStates(states.sort())
 
-    if (document.referrer === 'https://www.thegravityapp.com/') {
+    if (document.referrer === 'https://www.thegravityapp.com/' || window.location.href.indexOf('paycorfeed.lifeatalliance.com/paycor/?gnk=job&gni=') > -1 ) {
       console.log('true')
       console.log(window.location.href)
       console.log(document.referrer)
